@@ -1,0 +1,13 @@
+<h2>My Cart</h2>
+<div class="books">
+    <div *ngFor="let book of books">        
+        <div class="card">
+            <a  [title]="book.name" routerLink="/book/{{book.id}}">
+                <img *ngIf="book.image" [src]=" book.image " alt="Denim Jeans" style="width:90%; height: 70%; margin-top:10px">
+                <h1 class="name">{{ book.name }}</h1>
+                <h1 class="author">{{ book.author }}</h1>
+                <p class="price"> ₸{{book.price}} </p>
+            </a>
+        </div>        
+    </div>
+</div>

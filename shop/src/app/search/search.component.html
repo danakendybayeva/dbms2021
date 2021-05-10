@@ -1,0 +1,12 @@
+<div class="books">
+    <div *ngFor="let book of books">        
+        <div class="card">
+            <a  [title]="book.name" routerLink="/book/{{book.id}}">
+                <img *ngIf="book.image" [src]=" book.image " alt="Denim Jeans" style="height:50%; width: 90%; margin-top:10px">
+                <h1 class="name">{{ book.name }}</h1>
+                <p class="price"> ₸{{ book.price }} </p>
+            </a>
+            <p><button (click)="addToCart(book)">Add to Cart</button></p>
+        </div>        
+    </div>
+</div>

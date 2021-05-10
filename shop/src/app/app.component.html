@@ -1,0 +1,159 @@
+<style>
+    * {
+      font-family: "Raleway";
+      box-sizing: border-box;
+  }
+  
+  .card {
+      width: 70%;
+      height: auto;
+      position: absolute;
+      background: white;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      left: 15%;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  }
+      
+  .card:hover {
+      box-shadow: 0 8px 17px 0 rgba(133, 106, 106, 0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+      
+  .photo {
+      padding: 10px;
+      width: 45%;
+      text-align: center;
+      float: left;    
+      border-right: 2px solid #efefef;
+  
+  }
+  
+  .photo img { 
+      width: 100%;
+  }
+      
+  .description {
+      padding: 30px;
+      float: left;
+      width: 55%;
+  }
+  
+  .description h1 {
+      color: #515151;
+      font-weight: 300;
+      padding-top: 15px;
+      margin: 0;
+      font-size: 30px;
+      font-weight: 300;
+  }
+       
+  .description h2 {
+      color: #515151;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 500;
+  }
+        
+  .description h4 { 
+      margin: 0;
+      padding-top: 15px;
+      color: #727272;
+      font-weight: 500;
+  }
+        
+  .description p { 
+      line-height: 20px;
+      color: #727272;
+      padding: 20px 0;
+      margin: 0;
+  }
+  
+  .description .comment{
+      padding: 5px 0;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  
+  .description textarea{
+      width: 100%;
+      height: 80px;
+      font-size: 16px;
+  }
+        
+  button {
+      outline: 0;
+      border: 0;
+      background: none;
+      border: 1px solid #d9d9d9;
+      padding: 8px 0px;
+      margin-bottom: 30px;
+      color: #515151;
+      text-transform: uppercase;
+      width: 125px;
+      font-family: inherit;
+      margin-right: 5px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+  }
+  
+  button:hover {
+      background: darken(white, 2%);
+      border: 1px solid #6567c2;
+      color: #6567c2;
+      cursor: pointer;
+  }
+  
+  .share{
+      width: 170px;
+  }
+  
+  
+  .dialogbox {
+      position: relative;
+      height: auto;
+      padding: 5px;
+      background-color: #f0ffff;
+      border-radius: 3px;
+      border: 1.5px solid #ccc;
+      margin-top: 10px;
+      min-height: 30px;
+      font-family: Arial;
+      line-height: 1.5;
+  }
+  
+  .dialogbox .name{
+      font-weight: bold;
+      font-size: 17px;
+      text-decoration: underline;
+      color: #8b6969;
+      line-height: 3;
+      padding-left: 10px;
+  }
+  
+  .dialogbox .text{
+      font-size: 15px;
+  }
+  </style>
+  
+<app-top-bar></app-top-bar>
+
+<app-navbar></app-navbar>
+
+<router-outlet></router-outlet>
+
+
+  <div class="card" >
+      <div class="photo">
+          <img src="https://simg.marwin.kz/media/catalog/product/cache/8d1771fdd19ec2393e47701ba45e606d/6/0/6007449916.jpg" alt="photo">        
+      </div>
+      <div class="description">
+        <h2>Я - интроверт. Тихони начинают и выигрывают</h2>
+        <h4>Финкл Д.</h4>
+        <h1>4190₸</h1>
+        <h4>Практическая психология</h4>
+        <h4><strong>Рейтинг:</strong> 4.7 </h4>
+        <p>Что объединяет Джоан Роулинг, Билла Гейтса, Илона Маска и Павла Дурова, кроме того что они добились невероятных успехов? Все они — интроверты.На совещаниях вы помалкиваете, оставаясь в тени своих говорливых и более предприимчивых коллег. Вам сложно проходить собеседования, просить повышения зарплаты, брать на себя инициативу и продвигать свои идеи. Стандартный вопрос «А теперь расскажите, пожалуйста, о себе» вводит вас в ступор. И в мире, полном экстравертов, вы теряетесь. Значит ли это, что интроверт не может сделать карьеру? Конечно, нет!Джейн Финкл — карьерный консультант и интроверт — проведет вас по всем этапам выстраивания карьеры, от первой оценки своих профессиональных навыков и поиска работы до получения желаемой должности и дальнейшего продвижения.Используйте ваши преимущества интроверта наилучшим образом и заткните экстравертов за пояс!</p>
+       
+        <br>
+      </div>
+  </div>
